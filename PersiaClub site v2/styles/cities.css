@@ -1,0 +1,109 @@
+/* Загальні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d4af37 !important;
+}
+
+/* Заголовок */
+.jumbotron {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 15px 0; /* Зменшено на 70% */
+    margin-bottom: 30px;
+    flex-shrink: 0;
+}
+
+.jumbotron h1 {
+    font-size: 2rem; /* Зменшено на 70% */
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1rem; /* Зменшено на 70% */
+    margin-top: 10px;
+}
+
+.no-border-radius {
+    border-radius: 0 !important;
+}
+
+.container {
+    flex: 1; /* This ensures the container grows to fill the available space */
+}
+
+.city-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    width: 100%;
+}
+
+.city-card:hover {
+    transform: scale(1.00);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.city-info {
+    flex-grow: 1;
+}
+
+.city-info h3 {
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.city-info p, .city-info ul, .city-info li {
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    width: 100%; /* Забезпечує ширину на весь екран */
+}

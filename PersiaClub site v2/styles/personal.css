@@ -1,0 +1,112 @@
+/* Загальні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d4af37 !important;
+}
+
+.container {
+    flex: 1; /* This ensures the container grows to fill the available space */
+}
+
+.person-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 2s ease-in-out;
+    position: relative; /* Ensure the card itself is positioned relative */
+}
+
+.person-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.person-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.person-card img:hover {
+    transform: scale(0.85);
+}
+
+.person-card h3 {
+    color: #343a40;
+    margin-bottom: 10px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.person-card p {
+    color: #6c757d;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Анімації */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
